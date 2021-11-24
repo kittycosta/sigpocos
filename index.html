@@ -31,7 +31,7 @@
 		var shp_bacias_hidrograficas_mt ='https://raw.githubusercontent.com/kittycosta/camadas/main/bacias_hidrograficas_mt.zip';
 		var shp_hidrogeologia ='https://raw.githubusercontent.com/kittycosta/camadas/main/hidrogeologia.zip';
 		var shp_localidades ='https://raw.githubusercontent.com/kittycosta/camadas/main/localidades.zip';
-		var shp_sistemaviariosimples  ='https://raw.githubusercontent.com/kittycosta/camadas/main/sistemaviariosimples.zip';	
+		var shp_sistemaviariosimples ='https://raw.githubusercontent.com/kittycosta/camadas/main/sistemaviariosimples.zip';	
 
 <!-- CRIA CAMADAS DE BASE CARTOGRÁFICA -->	
 		var bacias_hidrograficas_mt = new L.Shapefile(shp_bacias_hidrograficas_mt, { onEachFeature: function(feature, layer) { if (feature.properties) { layer.bindPopup(Object.keys(feature.properties).map(function(k) { return k + ": " + feature.properties[k]; }).join("<br />"), { maxHeight: 600 }); } } });
