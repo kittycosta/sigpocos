@@ -88,10 +88,10 @@
 <!-- ADICIONE AQUI AS CAMADAS PARA O CONTROLE -->
 			var camadas = {	//INSERE AS CAMADAS CRIADAS ACIMA
 			    	"Poços": markers,	//INSIRA OS NOMES DAS CAMADAS E AS VARIAVEIS CRIADAS ACIMA
-				"Bacias Hidrográficas": bacias_hidrograficas_mt
-				"Hidrogeologia": hidrogeologia
-				"Localidades": localidades
-				"Sistema Viário": sistemaviariosimples
+				    "Bacias Hidrográficas": bacias_hidrograficas_mt,
+				    "Hidrogeologia": hidrogeologia,
+				    "Localidades": localidades,
+				    "Sistema Viário": sistemaviariosimples,
 			};
 			L.control.layers(mapasbase, camadas, {collapsed:false}).addTo(map); 	//ADICIONA O CONTROLE DE CAMADAS NO MAPA
 	
